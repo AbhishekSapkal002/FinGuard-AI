@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 import numpy as np
-from model_loader import model
-from schemas import LoanData
+from backend.model_loader import model
+from backend.schemas import LoanData
 from fastapi.middleware.cors import CORSMiddleware
 
 
