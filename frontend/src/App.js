@@ -25,7 +25,7 @@ function App() {
   const handleSubmit = async () => {
     try {
       const res = await axios.post(
-        "http://127.0.0.1:8000/predict",
+        "https://finguard-ai-vtfi.onrender.com/predict",
         form
       );
       setResult(res.data);
