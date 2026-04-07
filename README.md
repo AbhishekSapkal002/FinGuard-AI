@@ -77,5 +77,3 @@ FinGuard-AI/
 ## 🔒 Security & Validation
 The backend heavily utilizes `pydantic` schemas. Inputs like `person_age` are constrained (18-120), and `loan_amount` must be greater than zero. These guarantee data integrity before hitting the model inference runtime.
 
----
-*Created as part of the Finance Backend Development Assignment.*
