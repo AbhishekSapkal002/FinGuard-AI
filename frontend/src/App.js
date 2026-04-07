@@ -61,7 +61,7 @@ function App() {
     }
 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/predict", payload);
+      const res = await axios.post("/predict", payload);
       setResult(res.data);
     } catch (err) {
       console.log(err);
