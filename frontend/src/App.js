@@ -61,12 +61,7 @@ function App() {
     }
 
     try {
-      // Intelligently route the API target exactly depending on the React Environment
-      const API_ENDPOINT = process.env.NODE_ENV === "development" 
-        ? "http://127.0.0.1:8000/predict" 
-        : "/predict";
-        
-      const res = await axios.post(API_ENDPOINT, payload);
+      const res = await axios.post("http://127.0.0.1:8000/predict", payload);
       setResult(res.data);
     } catch (err) {
       console.log(err);
